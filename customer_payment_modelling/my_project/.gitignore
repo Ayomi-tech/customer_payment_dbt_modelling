@@ -10,3 +10,5 @@ profiles.yml
 
 *.duckdb
 *.db
+
+seeds/
