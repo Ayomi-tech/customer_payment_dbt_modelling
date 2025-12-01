@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: raw_data
-    schema: auto_raw_data
+    schema: customer_payment_raw_data
     description: "Raw data tables loaded into DuckDB from CSV files"
 
     tables:
