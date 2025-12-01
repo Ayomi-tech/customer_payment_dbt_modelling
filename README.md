@@ -18,7 +18,7 @@ This project follows a standard dbt workflow, progressing from raw CSV data to a
 
 3.  **Warehouse:** The `warehouse` folder contains the core logic for building the final data warehouse tables. Here, data types are explicitly defined, and final transformations are applied to prepare the data for analysis. This is where the fact table and dimension tables are built and additional two tables from 'customer details' field.  Deduplication logic is implemented in this layer to ensure data quality.
 
-4.  **Analyses:** The `analyses` folder contains SQL queries used to generate insights based on the business questions provided by the recruiter. These queries leverage the curated data in the warehouse to answer specific analytical questions.
+4.  **Analyses:** The `analyses` folder contains SQL queries used to generate insights based on the business questions. These queries leverage the curated data in the warehouse to answer specific analytical questions.
 
 ## Key Challenges and Solutions
 
