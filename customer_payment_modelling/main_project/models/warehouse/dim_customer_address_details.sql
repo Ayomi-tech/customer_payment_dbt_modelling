@@ -22,7 +22,7 @@ extracted_addresses AS (
     SELECT
            UUID() AS address_id, --- Generated UUID for billing address
         
-        -- Allow NULL customer_id and use email as an alternative identifier
+        -- Allow NULL customer_id and use Email as an alternative identifier
         COALESCE(
             json_extract_string(c.final_customer_details, '$.customer_id'), 
             json_extract_string(c.final_customer_details, '$.email_address'),
